@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 function Counter() {
   // read from the Redux store
   const items = useSelector((state) => state.items);
+  console.log(items)
 
   // gives us the dispatch function to send actions to the Redux store
   const dispatch = useDispatch();
